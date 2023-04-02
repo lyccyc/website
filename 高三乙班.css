@@ -19,12 +19,6 @@ body {
   border-radius: 10px;
 }
 
-.card-img-top{
-  width:50%;
-  height:auto;
-  overflow: hidden; /* 清除浮动影响 */
-}
-
 a{
   color:white;
 }
