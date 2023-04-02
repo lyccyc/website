@@ -22,6 +22,11 @@ body {
 .card-img-top{
   width:auto;
   height:auto;
+  overflow: hidden; /* 清除浮动影响 */
+}
+
+a{
+  color:white;
 }
 .image-preview{
       width:0px;
@@ -31,14 +36,13 @@ body {
   }
   li{width:180px;}
   a {transition: 0.5s;}
-  a:hover{background: lime;}
-  a:hover+img{width: 50px;  
+  a:hover+img{width: 100px;  
               border:5px solid white;
               border-radius:20px;
               border-style:solid;}
 
 .s1 {
-  color: black;
+  color: #fff;
   padding: 5px;
   margin-top: 20px;
   display: flex;
