@@ -20,7 +20,7 @@ body {
 }
 
 .card-img-top{
-  width:auto;
+  width:50%;
   height:auto;
   overflow: hidden; /* 清除浮动影响 */
 }
