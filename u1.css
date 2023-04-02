@@ -1,0 +1,25 @@
+.image-preview {
+  position: relative;
+  width: 300px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+}
+
+.image-preview .preview {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+}
+
+.image-preview:hover .preview {
+  display: block;
+}
+
+.image-preview:hover img {
+  cursor: pointer;
+}
