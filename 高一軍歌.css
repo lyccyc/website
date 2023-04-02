@@ -1,0 +1,110 @@
+body {
+  background-color: aquamarine;
+}
+
+.picture {
+  width: auto;
+  height: auto;
+  justify-content: baseline;
+}
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 500px) {
+  .p {
+    flex-wrap: wrap;
+  }
+
+  .p1 {
+    width: auto;
+    height: auto;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .keyword {
+    font-size: 20px;
+  }
+  .s1 {
+    flex-wrap: wrap;
+  }
+  .s1-1 {
+    width: 75%;
+    flex: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .s1-2 {
+    width: 75%;
+    flex: auto;
+    justify-content: center;
+    align-items: center; /*垂直對其*/
+  }
+
+  .s1-3 {
+    width: 75%;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+.first {
+  font: 20px oblique;
+  justify-content: flex-end;
+}
+
+.typewriter-text p {
+  position: relative; /* 设置相对定位 */
+  display: inline-block; /* 将文本作为块元素处理 */
+}
+
+.typewriter-text p::before {
+  content: ""; /* 伪元素内容为空 */
+  position: absolute; /* 设置绝对定位 */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff; /* 与背景色相同 */
+  animation: typing 3s steps(30, end) forwards; /* 打字动画 */
+}
+
+/* 打字动画 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.img-multiline-text {
+  opacity: 0; /* 初始不可见 */
+  animation: fade-in 2s ease-in-out forwards; /* 渐变动画 */
+}
+
+/* 渐变动画 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* 向下移动20像素 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 恢复到原位置 */
+  }
+}

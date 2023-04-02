@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Image Reveal on Hover</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#image2 {
+			display: none;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img id="image1" src="graduation-trip.jpg" class="img-fluid"/>
+                <img id="image1" src="final.jpg" class="img-fluid"/>
+				<a href="#" class="stretched-link" onmouseover="document.getElementById('image2').style.display='block';" onmouseout="document.getElementById('image2').style.display='none';">
+					Hover to reveal
+				</a>
+			</div>
+			<div class="col-md-4">
+				<img id="image2" src="soldier-2.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
