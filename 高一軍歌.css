@@ -1,8 +1,18 @@
 body {
-  background-color: aquamarine;
+  background-color: #b3c99c;
 }
 .align {
   align-content: center;
+}
+
+/*打字效果*/
+#typing-text {
+  display: none;
+}
+
+.cut {
+  border-radius: 10px;
+  border: 5px, #009fbd;
 }
 .slides {
   display: flex;
