@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>高一班籃</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 样式表 -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery JavaScript 库 -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript 插件 -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="高一班籃.css" ; />
+  </head>
+
+  <body>
+    <div id="typing-text"></div>
+    <script>
+      var text =
+        "有點尷尬的是我對高一的很多事都沒有印象\n印象中好像我們得了冠軍?\n阿阿對是冠軍\n該死的網頁設計怎麼那麼難\n難的不是怎麼呈現 而是呈現甚麼\n哭阿";
+      var typingText = document.getElementById("typing-text");
+      function typeWriter(text) {
+        var i = 0;
+        var typingInterval = setInterval(function () {
+          typingText.style.display = "inline-block";
+          typingText.textContent += text[i];
+          i++;
+          if (i > text.length - 1) {
+            clearInterval(typingInterval);
+          }
+        }, 100); //设置逐字打字的速度
+      }
+      typeWriter(text);
+    </script>
+  </body>
+</html>
