@@ -2,3 +2,21 @@
 #typing-text {
   display: none;
 }
+
+#button-container {
+  position: fixed;
+  top: 100px; /* 距離頂部的距離 */
+  left: 10px; /* 距離右邊的距離 */
+}
+
+#button-container2 {
+  position: fixed;
+  top: 100px; /* 距離頂部的距離 */
+  left: 500px; /* 距離右邊的距離 */
+}
+
+#button-container3 {
+  position: fixed;
+  top: 10px; /* 距離頂部的距離 */
+  left: 1000px; /* 距離右邊的距離 */
+}

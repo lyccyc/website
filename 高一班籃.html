@@ -30,13 +30,16 @@
     <div id="typing-text"></div>
     <script>
       var text =
-        "有點尷尬的是我對高一的很多事都沒有印象\n印象中好像我們得了冠軍?\n阿阿對是冠軍\n該死的網頁設計怎麼那麼難\n難的不是怎麼呈現 而是呈現甚麼\n哭阿";
+        "This is the text that will be typed out.\nThis is another line of text.";
       var typingText = document.getElementById("typing-text");
       function typeWriter(text) {
         var i = 0;
         var typingInterval = setInterval(function () {
           typingText.style.display = "inline-block";
           typingText.textContent += text[i];
+          if (text[i] === "\n") {
+            typingText.innerHTML += "<br>";
+          }
           i++;
           if (i > text.length - 1) {
             clearInterval(typingInterval);
@@ -44,6 +47,84 @@
         }, 100); //设置逐字打字的速度
       }
       typeWriter(text);
+    </script>
+
+    <div class="hr"></div>
+
+    <div class="button-container">
+      <button id="toggle1">高一乙</button>
+      <ol id="myList1" class="dropdown-menu">
+        <li>高一聖誕</li>
+        <li>高一英語話劇</li>
+        <li>高一校慶</li>
+      </ol>
+    </div>
+    <div class="button-container">
+      <button id="toggle2">高二乙</button>
+      <ol id="myList2" class="dropdown-menu">
+        <li>大隊接力比賽</li>
+        <li>班際籃球比賽</li>
+        <li>聖誕歌曲比賽</li>
+        <li><a href="高一聖誕.html">班際排球比賽</a></li>
+      </ol>
+    </div>
+    <div class="button-container">
+      <button id="toggle3">高三乙</button>
+      <ol id="myList3" class="dropdown-menu">
+        <li>學測備考</li>
+        <li>學測三天</li>
+        <li>校慶園遊會</li>
+      </ol>
+    </div>
+
+    <style>
+      #typing-text {
+        margin-bottom: 20px;
+      }
+      #myList1,
+      #myList2,
+      #myList3 {
+        display: none;
+        position: absolute;
+        top: auto;
+        left: 0;
+        margin-top: 20px;
+      }
+    </style>
+
+    <script>
+      var button1 = document.getElementById("toggle1");
+      var list1 = document.getElementById("myList1");
+
+      button1.onclick = function () {
+        if (list1.style.display === "none") {
+          list1.style.display = "block";
+        } else {
+          list1.style.display = "none";
+        }
+      };
+
+      var button2 = document.getElementById("toggle2");
+      var list2 = document.getElementById("myList2");
+
+      button2.onclick = function () {
+        if (list2.style.display === "none") {
+          list2.style.display = "block";
+        } else {
+          list2.style.display = "none";
+        }
+      };
+
+      var button3 = document.getElementById("toggle3");
+      var list3 = document.getElementById("myList3");
+
+      button3.onclick = function () {
+        if (list3.style.display === "none") {
+          list3.style.display = "block";
+        } else {
+          list3.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
