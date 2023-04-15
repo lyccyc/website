@@ -1,30 +1,18 @@
 body {
-  background-color: #ffa559;
+  background-color: #fab984;
   overflow: visible;
 }
 
-.hr {
-  content: "";
-  display: inline-block;
-  border-left: 5px dashed black;
-  height: 1000px;
-  vertical-align: middle;
-  margin-left: 100px;
-}
-
 #typing-text {
-  font-family: Arial, sans-serif;
   font-size: 24px;
-  line-height: 1.5;
   display: none;
 }
 
 #button-container {
   position: relative;
-  margin-top: 75%;
-  flex: auto;
-  justify-content: flex-start;
-  align-items: flex-start; /*垂直對其*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 可以調整按鈕之間的間距 */
 }
 
 #myList1,

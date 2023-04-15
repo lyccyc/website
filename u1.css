@@ -1,6 +1,10 @@
 /*打字效果*/
-#typing-text {
-  display: none;
+.typewriter-text {
+  white-space: pre-line; /* 设置为 pre-line 可以保留空格和换行 */
+  overflow: auto;
+  font-family: monospace;
+  font-size: 1.5em;
+  line-height: 0.5;
 }
 
 #button-container {
