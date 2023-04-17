@@ -24,9 +24,96 @@
     <!-- Bootstrap JavaScript 插件 -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="高一班籃.css" ; />
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
   </head>
 
   <body>
+    <p>
+      很高興你進到了高一班籃這個網頁，我打這段是2023.04.17 上午1.35<br />
+      對你沒看錯是凌晨<br />
+      今天，喔應該是昨天，我回宿舍遇到你，跟你說我要做壞事<br />
+      其實只是不睡覺，我躁期好像來了<br />
+      好啦話不多說，想看更多其他網頁請點下面<br />
+    </p>
+    <div class="dropdown">
+      <button>高一乙</button>
+      <div class="dropdown-content" class="but1">
+        <span>高一聖誕</span><br />
+        <span>高一英語話劇</span><br />
+        <span>高一校慶</span><br />
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button>高二乙</button>
+      <div class="dropdown-content" class="but2">
+        <span>大隊接力比賽</span><br />
+        <span>班際籃球比賽</span><br />
+        <span>聖誕歌曲比賽</span><br />
+        <span><a href="高一聖誕.html">班際排球比賽</a></span>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button>高三乙</button>
+      <div class="dropdown-content" class="but3">
+        <span>學測備考</span><br />
+        <span>學測三天</span><br />
+        <span>校慶園遊會</span><br />
+      </div>
+    </div>
+
+    <hr />
+    <!--圖卡-->
+    <style>
+      div.polaroid {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 10px;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 5px 10px 5px;
+        font-size: 30px;
+      }
+    </style>
+
+    <div class="polaroid">
+      <img src="s1-basketball-3.jpg" style="width: 100%" />
+      <div class="container">
+        <span>高一班籃</span>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="basketball-game.jpg" style="width: 100%" />
+      <div class="container">
+        <span>我們是冠軍</span>
+      </div>
+    </div>
+    <!--打字動畫-->
     <h3>
       <div class="typewriter-text">
         <span class="line1"></span>
@@ -200,86 +287,10 @@
 
     <style>
       .typewriter-text {
-        font-size: 15px;
+        font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
         white-space: pre-line;
       }
     </style>
-
-    <div class="button-container1">
-      <button id="toggle1">高一乙</button>
-      <ol id="myList1" class="dropdown-menu">
-        <li>高一聖誕</li>
-        <li>高一英語話劇</li>
-        <li>高一校慶</li>
-      </ol>
-    </div>
-    <div class="button-container2">
-      <button id="toggle2">高二乙</button>
-      <ol id="myList2" class="dropdown-menu">
-        <li>大隊接力比賽</li>
-        <li>班際籃球比賽</li>
-        <li>聖誕歌曲比賽</li>
-        <li><a href="高一聖誕.html">班際排球比賽</a></li>
-      </ol>
-    </div>
-    <div class="button-container3">
-      <button id="toggle3">高三乙</button>
-      <ol id="myList3" class="dropdown-menu">
-        <li>學測備考</li>
-        <li>學測三天</li>
-        <li>校慶園遊會</li>
-      </ol>
-    </div>
-
-    <style>
-      #typing-text {
-        margin-bottom: 20px;
-      }
-      #myList1,
-      #myList2,
-      #myList3 {
-        display: none;
-        position: absolute;
-        top: auto;
-        left: 0;
-        margin-top: 20px;
-      }
-    </style>
-
-    <script>
-      var button1 = document.getElementById("toggle1");
-      var list1 = document.getElementById("myList1");
-
-      button1.onclick = function () {
-        if (list1.style.display === "none") {
-          list1.style.display = "block";
-        } else {
-          list1.style.display = "none";
-        }
-      };
-
-      var button2 = document.getElementById("toggle2");
-      var list2 = document.getElementById("myList2");
-
-      button2.onclick = function () {
-        if (list2.style.display === "none") {
-          list2.style.display = "block";
-        } else {
-          list2.style.display = "none";
-        }
-      };
-
-      var button3 = document.getElementById("toggle3");
-      var list3 = document.getElementById("myList3");
-
-      button3.onclick = function () {
-        if (list3.style.display === "none") {
-          list3.style.display = "block";
-        } else {
-          list3.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>

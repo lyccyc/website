@@ -187,6 +187,37 @@
         }
       };
     </script>
+
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="dropdown">
+    <button>高一乙</button>
+    <div class="dropdown-content">
+    <p>高一聖誕</p>
+    </div>
+  </div>
+  
   </body>
 </html>
 
@@ -230,3 +261,194 @@
   justify-content: flex-end;
   align-items: flex-end; /*垂直對其*/
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  position: relative;
+  width: 50%; /* 调整图片宽度 */
+  margin: 0 10px; /* 调整图片之间的距离 */
+}
+.text-container {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+h2,
+p {
+  margin: 0;
+}
+
+<style>
+  .typewriter-text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre-line;
+  }
+</style>
+
+<div class="button-container1">
+  <button id="toggle1">高一乙</button>
+  <ol id="myList1" class="dropdown-menu">
+    <li>高一聖誕</li>
+    <li>高一英語話劇</li>
+    <li>高一校慶</li>
+  </ol>
+</div>
+<div class="button-container2">
+  <button id="toggle2">高二乙</button>
+  <ol id="myList2" class="dropdown-menu">
+    <li>大隊接力比賽</li>
+    <li>班際籃球比賽</li>
+    <li>聖誕歌曲比賽</li>
+    <li><a href="高一聖誕.html">班際排球比賽</a></li>
+  </ol>
+</div>
+<div class="button-container3">
+  <button id="toggle3">高三乙</button>
+  <ol id="myList3" class="dropdown-menu">
+    <li>學測備考</li>
+    <li>學測三天</li>
+    <li>校慶園遊會</li>
+  </ol>
+</div>
+
+<style>
+  #typing-text {
+    margin-bottom: 20px;
+  }
+  #myList1,
+  #myList2,
+  #myList3 {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 0;
+    margin-top: 20px;
+  }
+</style>
+
+<script>
+  var button1 = document.getElementById("toggle1");
+  var list1 = document.getElementById("myList1");
+
+  button1.onclick = function () {
+    if (list1.style.display === "none") {
+      list1.style.display = "block";
+    } else {
+      list1.style.display = "none";
+    }
+  };
+
+  var button2 = document.getElementById("toggle2");
+  var list2 = document.getElementById("myList2");
+
+  button2.onclick = function () {
+    if (list2.style.display === "none") {
+      list2.style.display = "block";
+    } else {
+      list2.style.display = "none";
+    }
+  };
+
+  var button3 = document.getElementById("toggle3");
+  var list3 = document.getElementById("myList3");
+
+  button3.onclick = function () {
+    if (list3.style.display === "none") {
+      list3.style.display = "block";
+    } else {
+      list3.style.display = "none";
+    }
+  };
+</script>
+
+ <style>
+      .typewriter-text {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: pre-line;
+      }
+    </style>
+
+    <div class="button-container1">
+      <button id="toggle1">高一乙</button>
+      <ol id="myList1" class="dropdown-menu">
+        <li>高一聖誕</li>
+        <li>高一英語話劇</li>
+        <li>高一校慶</li>
+      </ol>
+    </div>
+    <div class="button-container2">
+      <button id="toggle2">高二乙</button>
+      <ol id="myList2" class="dropdown-menu">
+        <li>大隊接力比賽</li>
+        <li>班際籃球比賽</li>
+        <li>聖誕歌曲比賽</li>
+        <li><a href="高一聖誕.html">班際排球比賽</a></li>
+      </ol>
+    </div>
+    <div class="button-container3">
+      <button id="toggle3">高三乙</button>
+      <ol id="myList3" class="dropdown-menu">
+        <li>學測備考</li>
+        <li>學測三天</li>
+        <li>校慶園遊會</li>
+      </ol>
+    </div>
+
+    <style>
+      #typing-text {
+        margin-bottom: 20px;
+      }
+      #myList1,
+      #myList2,
+      #myList3 {
+        display: none;
+        position: absolute;
+        top: auto;
+        left: 0;
+        margin-top: 20px;
+      }
+    </style>
+
+    <script>
+      var button1 = document.getElementById("toggle1");
+      var list1 = document.getElementById("myList1");
+
+      button1.onclick = function () {
+        if (list1.style.display === "none") {
+          list1.style.display = "block";
+        } else {
+          list1.style.display = "none";
+        }
+      };
+
+      var button2 = document.getElementById("toggle2");
+      var list2 = document.getElementById("myList2");
+
+      button2.onclick = function () {
+        if (list2.style.display === "none") {
+          list2.style.display = "block";
+        } else {
+          list2.style.display = "none";
+        }
+      };
+
+      var button3 = document.getElementById("toggle3");
+      var list3 = document.getElementById("myList3");
+
+      button3.onclick = function () {
+        if (list3.style.display === "none") {
+          list3.style.display = "block";
+        } else {
+          list3.style.display = "none";
+        }
+      };
+    </script>
