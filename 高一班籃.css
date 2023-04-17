@@ -1,8 +1,19 @@
+@font-face {
+  font-family: "huakang";
+  src: url("FAMILY/紅夜角新書 PRO M (20180109).ttf");
+  /* need to be ttf can't be ttc  */
+}
+
 body {
   background-color: #fab984;
   overflow: scroll;
+  align-items: center;
+  font-family: "huakang";
 }
 
+.text {
+  text-align: center;
+}
 #typing-text {
   font-size: 24px;
   display: none;

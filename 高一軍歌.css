@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "huakang";
+  src: url("FAMILY/紅夜角新書 PRO R (20181227).ttf");
+  /* need to be ttf can't be ttc  */
+}
+
 body {
   background-color: #b3c99c;
+  font-family: "huakang";
 }
 .align {
   align-content: center;

@@ -1,8 +1,18 @@
 /* 標籤名稱選擇器*/
 @import "node_modules/bootstrap/scss/_card.scss";
 
+@font-face {
+  font-family: "huakang";
+  src: url("FAMILY/清松手寫體2.TTF");
+  /* need to be ttf can't be ttc  */
+}
+
+html {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
 body {
   background-color: #576cbc;
+  font-family: "huakang";
 }
 
 .content {
