@@ -22,3 +22,43 @@ body {
 button {
   margin: 0 10px;
 }
+
+@media (max-width: 500px) {
+  body {
+    background-color: #fab984;
+    overflow: scroll;
+    align-items: center;
+    font-family: "huakang";
+  }
+  .text {
+    text-align: center;
+  }
+  #typing-text {
+    font-size: 24px;
+    display: none;
+  }
+
+  button {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  body {
+    background-color: #fab984;
+    overflow: scroll;
+    align-items: center;
+    font-family: "huakang";
+  }
+  .text {
+    text-align: center;
+  }
+  #typing-text {
+    font-size: 24px;
+    display: none;
+  }
+
+  button {
+    margin: 0 10px;
+  }
+}
