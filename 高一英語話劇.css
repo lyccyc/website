@@ -1,0 +1,36 @@
+/* 標籤名稱選擇器*/
+@import "node_modules/bootstrap/scss/_card.scss";
+
+@font-face {
+  font-family: "huakang";
+  src: url("FAMILY/DFT-XH-1.TTF");
+  /* need to be ttf can't be ttc  */
+}
+
+html {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
+body {
+  background-color: #ffeeb3;
+  font-family: "huakang";
+}
+
+.text {
+  text-align: center;
+}
+
+.word {
+  color: black;
+  text-align: center;
+}
+
+.card {
+  border-width: 8px;
+  border-radius: 10px;
+  color: #b8e7e1;
+}
+
+.card-group {
+  height: auto;
+  width: 100%;
+}
