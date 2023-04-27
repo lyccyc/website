@@ -29,3 +29,31 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.change {
+  width: 100px;
+  height: 100px;
+  text-shadow: 5px 5px 5px #eb6440;
+  position: relative;
+  animation: shadow 2s linear infinite;
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: 5px 5px 5px #eb6440;
+  }
+  25% {
+    text-shadow: 5px 5px 5px #f9f54b;
+  }
+  50% {
+    text-shadow: 5px 5px 5px #ff7000;
+  }
+  75% {
+    text-shadow: 5px 5px 5px #08fe6e;
+  }
+  100% {
+    text-shadow: 5px 5px 5px #ff7000;
+  }
+}
+
+/*2023.04.27完成*/
