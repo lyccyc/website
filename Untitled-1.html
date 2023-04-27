@@ -478,3 +478,34 @@ p {
     height: auto;
   }
 </style>
+
+<div class="container">
+  <div class="text">
+    <h2>Title</h2>
+    <p>Some text goes here...</p>
+  </div>
+  <div class="image">
+    <img src="christmas.jpg" alt="Image">
+  </div>
+</div>
+
+<style>
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  max-width: 100%;
+}
+</style>
