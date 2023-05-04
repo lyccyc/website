@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "huakang";
+  src: url("FAMILY/DFHsiu-W3-WINP-BF-02.ttf");
+  /* need to be ttf can't be ttc  */
+}
+
+body {
+  background-color: #e76161;
+  font-family: "huakang";
+}
