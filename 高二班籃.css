@@ -1,15 +1,10 @@
 @font-face {
   font-family: "huakang";
-  src: url("FAMILY/DFHsiu-W3-WINP-BF-02.ttf");
+  src: url("FAMILY/DFHsiu-W3-WIN-BF-01.ttf");
   /* need to be ttf can't be ttc  */
 }
 
 body {
   background-color: #f2b6a0;
   font-family: "huakang";
-}
-
-.text {
-  font-size: 25px;
-  text-align: center;
 }
