@@ -5,6 +5,10 @@
 }
 
 body {
-  background-color: #e76161;
+  background-color: #f2b6a0;
   font-family: "huakang";
+}
+
+.text {
+  font-size: 25px;
 }
