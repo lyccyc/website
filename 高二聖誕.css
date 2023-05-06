@@ -1,6 +1,6 @@
 @font-face {
   font-family: "huakang";
-  src: url("FAMILY/DFHsiu-W3-WIN-BF-01.ttf");
+  src: url("FAMILY/DFT-XH-1.TTF");
   /* need to be ttf can't be ttc  */
 }
 
@@ -12,4 +12,6 @@ body {
 .text {
   text-align: center;
   font-size: 25px;
+  border: 5px solid white;
+  border-radius: 10px;
 }
