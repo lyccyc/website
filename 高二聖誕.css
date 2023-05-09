@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #ffeeb3;
+  background-color: #f2921d;
   font-family: "huakang";
 }
 
 .text {
   text-align: center;
   font-size: 25px;
-  border: 5px solid white;
+  border: 5px solid #fff7d4;
   border-radius: 10px;
 }
