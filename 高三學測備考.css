@@ -1,19 +1,15 @@
 @font-face {
   font-family: "huakang";
-  src: url("FAMILY/DFHsiu-W3-WINP-BF-02.ttf");
+  src: url("FAMILY/紅夜角新書 PRO R (20181227).ttf");
   /* need to be ttf can't be ttc  */
 }
 
 body {
-  background-color: #f2b6a0;
+  background-color: #cbb279;
   font-family: "huakang";
 }
 
 .text {
   font-size: 25px;
   text-align: center;
-}
-
-span {
-  text-decoration: line-through;
 }
