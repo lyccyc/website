@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>成年禮</title>
+
+    <!-- Bootstrap 样式表 -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery JavaScript 库 -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript 插件 -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="高三學測備考.css" ; />
+  </head>
+  <body>
+    <style>
+      .container {
+        width: 600px;
+        height: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("eighteeen-1.jpg");
+        background-color: LightSkyBlue;
+      }
+    </style>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <style>
+      .item {
+        width: calc(20% - 2px);
+        padding: 9% 0;
+      }
+    </style>
+
+    <style>
+      .item {
+        animation: fadeIn 1s both;
+      }
+      .item:nth-child(3),
+      .item:nth-child(6),
+      .item:nth-child(15) {
+        animation-delay: 0.2s;
+      }
+      .item:nth-child(1),
+      .item:nth-child(5),
+      .item:nth-child(12) {
+        animation-delay: 0.2s;
+      }
+      .item:nth-child(7),
+      .item:nth-child(9),
+      .item:nth-child(11) {
+        animation-delay: 0.4s;
+      }
+      .item:nth-child(4),
+      .item:nth-child(10),
+      .item:nth-child(13) {
+        animation-delay: 0.6s;
+      }
+      .item:nth-child(2),
+      .item:nth-child(8),
+      .item:nth-child(14) {
+        animation-delay: 0.8s;
+      }
+      @keyframes fadeIn {
+        0% {
+          background-color: white;
+        }
+        100% {
+          background-color: transparent;
+        }
+      }
+    </style>
+  </body>
+</html>
