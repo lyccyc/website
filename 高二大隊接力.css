@@ -17,3 +17,25 @@ body {
 span {
   text-decoration: line-through;
 }
+
+@media (max-width: 1250px) {
+  .text {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  span {
+    text-decoration: line-through;
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  span {
+    text-decoration: line-through;
+  }
+}
