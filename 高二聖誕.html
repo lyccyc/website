@@ -40,11 +40,32 @@
         padding: 15px;
         text-align: center;
       }
+
+      .text-fade-in {
+        font-size: 25px;
+        text-align: center;
+        border: 5px solid #fff7d4;
+        border-radius: 10px;
+        color: #fff;
+        opacity: 0;
+        animation: fade-in 2s forwards;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
 
   <body>
-    <div class="text">
+    <div class="text-fade-in">
       不知道你有沒有哪一刻覺得 我們班是成熟的 大概率沒有吧哈哈<br />
       今天是2023.05.06 華興校慶 <br />
       你說是你在華興第18個校慶 距離我們的畢業也只剩20天 你寫了一篇文<br />

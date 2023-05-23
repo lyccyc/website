@@ -9,13 +9,6 @@ body {
   font-family: "huakang";
 }
 
-.text {
-  text-align: center;
-  font-size: 25px;
-  border: 5px solid #fff7d4;
-  border-radius: 10px;
-}
-
 @media (max-width: 1250px) {
   .text {
     text-align: center;
