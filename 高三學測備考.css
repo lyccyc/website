@@ -35,3 +35,61 @@ img {
   border-radius: 10px;
   color: #537188;
 }
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .wrap {
+    width: 400px;
+    height: 450px; /* 設置包裹元素的寬度 */
+  }
+
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img {
+    float: left; /* 圖像向左浮動 */
+    margin-right: 15px; /* 圖像與文字之間的間距 */
+  }
+
+  .card {
+    border-width: 10px;
+    border-radius: 10px;
+    color: #537188;
+  }
+}
+
+@media (max-width: 1250px) {
+  .text {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .wrap {
+    width: 400px;
+    height: 450px; /* 設置包裹元素的寬度 */
+  }
+
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img {
+    float: left; /* 圖像向左浮動 */
+    margin-right: 15px; /* 圖像與文字之間的間距 */
+  }
+
+  .card {
+    border-width: 10px;
+    border-radius: 10px;
+    color: #537188;
+  }
+}
