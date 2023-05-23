@@ -23,7 +23,15 @@ button {
   margin: 0 10px;
 }
 
+.back {
+  text-align: right;
+}
+
 @media (max-width: 500px) {
+  .back {
+    text-align: right;
+  }
+
   body {
     background-color: #fab984;
     overflow: scroll;
@@ -44,6 +52,10 @@ button {
 }
 
 @media (max-width: 1250px) {
+  .back {
+    text-align: right;
+  }
+
   body {
     background-color: #fab984;
     overflow: scroll;

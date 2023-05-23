@@ -12,6 +12,9 @@ body {
   align-content: center;
 }
 
+.back {
+  text-align: right;
+}
 /*打字效果*/
 #typing-text {
   display: none;

@@ -9,6 +9,9 @@ body {
   font-family: "huakang";
   font-size: 25px;
 }
+.back {
+  text-align: right;
+}
 
 .container {
   display: flex;
@@ -59,6 +62,10 @@ img {
 /*2023.04.27完成*/
 
 @media (max-width: 1250px) {
+  .back {
+    text-align: right;
+  }
+
   .container {
     display: flex;
     justify-content: center;
@@ -84,6 +91,9 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .back {
+    text-align: right;
+  }
   .container {
     display: flex;
     justify-content: center;
