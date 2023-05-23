@@ -13,13 +13,25 @@ span {
   text-decoration: line-through;
 }
 
+.back {
+  text-align: right;
+}
+
 @media (max-width: 1250px) {
+  .back {
+    text-align: right;
+  }
+
   span {
     text-decoration: line-through;
   }
 }
 
 @media (max-width: 500px) {
+  .back {
+    text-align: right;
+  }
+
   span {
     text-decoration: line-through;
   }
