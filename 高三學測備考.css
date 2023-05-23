@@ -9,6 +9,10 @@ body {
   font-family: "huakang";
 }
 
+.back {
+  text-align: right;
+}
+
 .text {
   font-size: 25px;
   text-align: left;
@@ -37,6 +41,10 @@ img {
 }
 
 @media (max-width: 500px) {
+  .back {
+    text-align: right;
+  }
+
   .text {
     font-size: 25px;
     text-align: left;
@@ -66,6 +74,10 @@ img {
 }
 
 @media (max-width: 1250px) {
+  .back {
+    text-align: right;
+  }
+
   .text {
     font-size: 25px;
     text-align: left;
