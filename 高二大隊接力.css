@@ -9,33 +9,34 @@ body {
   font-family: "huakang";
 }
 
-.text {
-  font-size: 25px;
-  text-align: center;
-}
-
 span {
   text-decoration: line-through;
 }
 
 @media (max-width: 1250px) {
-  .text {
-    font-size: 25px;
-    text-align: center;
-  }
-
   span {
     text-decoration: line-through;
   }
 }
 
 @media (max-width: 500px) {
-  .text {
-    font-size: 25px;
-    text-align: center;
-  }
-
   span {
     text-decoration: line-through;
+  }
+}
+
+.text-fade-in {
+  font-size: 25px;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  text-align: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

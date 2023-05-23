@@ -17,10 +17,27 @@
     <!-- Bootstrap JavaScript 插件 -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="高二大隊接力.css" ; />
+
+    <style>
+      .text-fade-in {
+        font-size: 48px;
+        opacity: 0;
+        animation: fade-in 2s forwards;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="text">
+    <div class="text-fade-in">
       <b>
         哎呀呀，是第一名的大隊接力呢<br />
         這個漫長又難熬的網頁終於進入高二篇<br />
@@ -32,7 +49,7 @@
         (話題好像有點跳，但沒關係)<br />
       </b>
     </div>
-    <div class="text">
+    <div class="text-fade-in">
       <b>
         很抱歉因為我們班群一張照片都沒有，所以我真的沒辦法給你照片，我甚至不知道預覽的照片從哪來的<br />
         所以就 將就一下<br />
