@@ -17,6 +17,25 @@
     <!-- Bootstrap JavaScript 插件 -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="學測三天.css" ; />
+    <style>
+      .text-fade-in {
+        font-size: 25px;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in 2s forwards;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
     <style>
@@ -93,7 +112,7 @@
       }
     </style>
 
-    <div class="text">
+    <div class="text-fade-in">
       今天是2023.05.19，你不知道發瘋的第幾天<br />
       你叫我們開班會，自己抽到風紀，也不知道以後你會不會記得這天，笑死<br />
       上台報告的時候，你提到畢旅，讓我突然想到自已發作那次<br />
