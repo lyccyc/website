@@ -17,10 +17,29 @@
     <!-- Bootstrap JavaScript 插件 -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="高二班籃.css" ; />
+    <style>
+      .text-fade-in {
+        font-size: 25px;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in 2s forwards;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="text">
+    <div class="text-fade-in">
       <b>
         高二班籃大概是大家永遠的遺憾吧，因為很荒唐的一球結束了整場比賽<br />
         對我而言那天也是很痛<br />

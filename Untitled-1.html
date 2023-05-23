@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Text Fade-In Animation</title>
+    <title>Text Fade-In Animation from Right</title>
     <style>
       .text-fade-in {
         font-size: 48px;
@@ -12,9 +12,11 @@
       @keyframes fade-in {
         0% {
           opacity: 0;
+          transform: translateX(100%);
         }
         100% {
           opacity: 1;
+          transform: translateX(0);
         }
       }
     </style>
